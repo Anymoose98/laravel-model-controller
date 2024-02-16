@@ -1,1 +1,21 @@
 @import '~bootstrap/scss/bootstrap';
+
+header{
+    height: 100px;
+    width: 100%;
+    background-color: grey;
+   
+}
+
+footer{
+    height: 100px;
+    background-color: grey;
+}
+
+.background-movie{
+    background-image: url('https://i.gifer.com/9QyD.gif');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
