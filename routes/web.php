@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Guest\movieController as movieController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,7 +12,5 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+route::get('/',[movieController::class,'index'])->name('homepage');
 
-Route::get('/', function () {
-    return view('welcome');
-});
